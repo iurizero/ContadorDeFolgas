@@ -1,6 +1,6 @@
 # Contador de Folgas
 
-Este projeto é um aplicativo web desenvolvido em React para ajudar a controlar e gerenciar folgas.
+Este projeto é um aplicativo web desenvolvido em React para ajudar a controlar e gerenciar o calendário de trabalho de um parente meu!.
 
 ## Scripts Disponíveis
 
