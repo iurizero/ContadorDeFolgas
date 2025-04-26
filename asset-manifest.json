@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/ContadorDeFolgas/static/js/main.71ca16fb.js",
+    "main.js": "/ContadorDeFolgas/static/js/main.af1d99a4.js",
     "index.html": "/ContadorDeFolgas/index.html",
-    "main.71ca16fb.js.map": "/ContadorDeFolgas/static/js/main.71ca16fb.js.map"
+    "main.af1d99a4.js.map": "/ContadorDeFolgas/static/js/main.af1d99a4.js.map"
   },
   "entrypoints": [
-    "static/js/main.71ca16fb.js"
+    "static/js/main.af1d99a4.js"
   ]
 }
