@@ -88,7 +88,8 @@ const CalendarDay = ({ date, isWorkDay }: { date: Date; isWorkDay: boolean }) =>
 // Componente principal
 function App() {
   const [currentDate, setCurrentDate] = useState<Date>(new Date());
-  const [startDate] = useState<Date>(new Date());
+  // Definindo uma data fixa de início (25 de fevereiro de 2024)
+  const [startDate] = useState<Date>(new Date(2024, 1, 25));
 
   const nextMonth = () => setCurrentDate(addMonths(currentDate, 1));
   const prevMonth = () => setCurrentDate(subMonths(currentDate, 1));
@@ -150,7 +151,8 @@ function App() {
               }
             }}>
               <Avatar
-                src="/logo.jpg"
+                src={process.env.PUBLIC_URL + "/logo.jpg"}
+                
                 alt="Logo"
                 sx={{
                   width: { xs: 80, sm: 100, md: 120 },
@@ -230,8 +232,10 @@ function App() {
               <Box sx={{ 
                 display: 'grid', 
                 gridTemplateColumns: 'repeat(7, 1fr)', 
-                gap: { xs: 0.5, sm: 1, md: 1.5 },
-                mt: { xs: 1, sm: 1.5, md: 2 }
+                gap: { xs: 0.25, sm: 0.5, md: 1 },
+                mt: { xs: 1, sm: 1.5, md: 2 },
+                width: '100%',
+                overflowX: 'auto'
               }}>
                 {/* Dias da semana */}
                 {weekDays.map((day) => (
@@ -240,9 +244,10 @@ function App() {
                     align="center" 
                     sx={{ 
                       fontWeight: 'bold',
-                      color: '#ffffff',
+                      color: '#1a237e',
                       py: { xs: 0.5, sm: 0.75 },
-                      fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.875rem' }
+                      fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.875rem' },
+                      minWidth: { xs: '40px', sm: '50px', md: '60px' }
                     }}
                   >
                     {day}
